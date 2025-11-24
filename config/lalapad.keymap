@@ -188,11 +188,11 @@
             sensor-bindings = <&volume_up_down>, <&scroll_up_down>;
 
             bindings = <
-&kp TAB           &kp Q         &kp W                    &kp E                   &kp R                   &kp T                 &kp Y          &kp U        &kp I            &kp O       &kp P         &kp BACKSPACE
-&kp LEFT_COMMAND  &kp A         &kp S                    &kp D                   &kp F                   &kp G                 &kp H          &kp J        &kp K            &kp L       &kp MINUS     &kp ENTER
-&kp LSHFT         &kp Z         &kp X                    &kp C                   &kp V                   &kp B                 &kp N          &kp M        &kp COMMA        &kp PERIOD  &kp UP_ARROW  &kp DELETE
-&kp LCTRL         &kp LEFT_ALT  &kp LANG_ZENKAKUHANKAKU  &mo 10                  &mo 8                   &mo 9                 &mo 9          &mo 8        &kp SPACE        &kp LEFT    &kp DOWN      &kp RIGHT
-                                &kp LG(LA(RIGHT))        &kp LG(LA(DOWN_ARROW))  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP_ARROW))  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
+&kp TAB           &kp Q         &kp W                      &kp E                   &kp R                   &kp T                 &kp Y          &kp U        &kp I            &kp O       &kp P         &kp BACKSPACE
+&kp LEFT_COMMAND  &kp A         &kp S                      &kp D                   &kp F                   &kp G                 &kp H          &kp J        &kp K            &kp L       &kp MINUS     &kp ENTER
+&kp LSHFT         &kp Z         &kp X                      &kp C                   &kp V                   &kp B                 &kp N          &kp M        &kp COMMA        &kp PERIOD  &kp UP_ARROW  &kp DELETE
+&kp LCTRL         &kp LEFT_ALT  &lt 3 LANG_ZENKAKUHANKAKU  &mo 10                  &mo 8                   &mo 9                 &mo 9          &mo 8        &kp SPACE        &kp LEFT    &kp DOWN      &kp RIGHT
+                                &kp LG(LA(RIGHT))          &kp LG(LA(DOWN_ARROW))  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP_ARROW))  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
             >;
         };
 
@@ -236,11 +236,11 @@
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &mkp MB5   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans               &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans               &trans  &trans  &mkp MB4   &mkp MB5   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp C_SLOW_TRACKING  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+                &trans  &trans  &trans               &trans  &trans  &trans     &trans     &trans
             >;
         };
 
