@@ -188,15 +188,58 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp TAB           &kp Q         &kp W              &kp E                   &kp R                   &kp T                 &kp Y          &kp U        &kp I            &kp O            &kp P      &kp BACKSPACE
-&kp LEFT_COMMAND  &kp A         &kp S              &kp D                   &kp F                   &kp G                 &kp H          &kp J        &kp K            &kp L            &kp MINUS  &kp ENTER
-&kp LSHFT         &kp Z         &kp X              &kp C                   &kp V                   &kp B                 &kp N          &kp M        &kp COMMA        &kp PERIOD       &kp SLASH  &kp EQUAL
-&kp LCTRL         &kp LEFT_ALT  &mo 9              &mo 10                  &kp SPACE               &mo 1                 &mo 1          &kp SPACE    &mo 8            &kp RIGHT_SHIFT  &kp DOWN   &mo 3
-                                &kp LG(LA(RIGHT))  &kp LG(LA(DOWN_ARROW))  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP_ARROW))  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
+&kp TAB           &kp Q  &kp W              &kp E                   &kp R                   &kp T                 &kp Y          &kp U        &kp I            &kp O            &kp P      &kp BACKSPACE
+&kp LEFT_COMMAND  &kp A  &kp S              &kp D                   &kp F                   &kp G                 &kp H          &kp J        &kp K            &kp L            &kp MINUS  &kp ENTER
+&kp LSHFT         &kp Z  &kp X              &kp C                   &kp V                   &kp B                 &kp N          &kp M        &kp COMMA        &kp PERIOD       &kp SLASH  &kp EQUAL
+&kp LCTRL         &mo 3  &kp LEFT_ALT       &mo 2                   &kp SPACE               &mo 6                 &mo 6          &kp SPACE    &mo 4            &kp RIGHT_SHIFT  &kp DOWN   &mo 1
+                         &kp LG(LA(RIGHT))  &kp LG(LA(DOWN_ARROW))  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP_ARROW))  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
             >;
         };
 
-        SECONDARY_LAYER {
+        SYSTEM_LAYER {
+            display-name = "system_layer";
+            sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
+
+            bindings = <
+&bt BT_CLR_ALL  &trans  &trans  &trans  &trans       &trans      &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&bt BT_CLR      &trans  &trans  &trans  &bootloader  &sys_reset  &sys_reset    &bootloader   &studio_unlock  &trans        &trans        &trans
+&trans          &trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans        &trans
+&trans          &trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans        &trans
+                        &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans
+            >;
+        };
+
+        CONTROL_LAYER {
+            bindings = <
+&kp TAB           &trans        &trans  &trans  &trans  &trans  &kp PG_UP      &trans    &kp UP    &trans     &trans  &kp DEL
+&kp LEFT_COMMAND  &trans        &trans  &trans  &trans  &trans  &trans         &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&kp LEFT_SHIFT    &trans        &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &trans    &kp HOME  &kp END    &trans  &trans
+&kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans         &trans    &trans    &trans     &trans  &kp ESC
+                                &trans  &trans  &trans  &trans  &trans         &trans    &trans    &trans
+            >;
+        };
+
+        SYMBOL_LAYER {
+            bindings = <
+&kp TAB           &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &kp BACKSLASH  &kp GRAVE
+&kp LEFT_COMMAND  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp LEFT_SHIFT    &trans        &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
+&kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &trans         &trans
+                                &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans
+            >;
+        };
+
+        NUMBER_LAYER {
+            bindings = <
+&kp TAB           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
+&kp LEFT_COMMAND  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&kp LEFT_SHIFT    &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp LEFT_ALT  &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
+                                &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
+            >;
+        };
+
+        TENKEY_LAYER {
             display-name = "secondary_layer";
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
@@ -217,19 +260,6 @@
 &trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans
                  &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans
-            >;
-        };
-
-        SYSTEM_LAYER {
-            display-name = "system_layer";
-            sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
-
-            bindings = <
-&bt BT_CLR_ALL  &trans  &trans  &trans  &trans       &trans      &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&bt BT_CLR      &trans  &trans  &trans  &bootloader  &sys_reset  &sys_reset    &bootloader   &studio_unlock  &trans        &trans        &trans
-&trans          &trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans        &trans
-&trans          &trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans        &trans
-                        &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans
             >;
         };
 
@@ -259,7 +289,7 @@
             display-name = "mouse_l_layer";
             bindings = <
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&mo 7   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&mo 10  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                    &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
@@ -274,46 +304,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        NUMBER_LAYER {
-            bindings = <
-&kp ESC           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
-&kp LEFT_COMMAND  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&kp LEFT_SHIFT    &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp LEFT_ALT  &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
-                                &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
-            >;
-        };
-
-        SYMBOL_LAYER {
-            bindings = <
-&kp TAB           &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &kp BACKSLASH  &kp GRAVE
-&kp LEFT_COMMAND  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT    &trans        &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans
-&kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &trans         &trans
-                                &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans
-            >;
-        };
-
-        CONTROL_LAYER {
-            bindings = <
-&kp TAB           &trans        &trans  &trans  &trans  &trans  &kp PG_UP      &trans    &kp UP    &trans     &trans  &kp DEL
-&kp LEFT_COMMAND  &trans        &trans  &trans  &trans  &trans  &trans         &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&kp LEFT_SHIFT    &trans        &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &trans    &kp HOME  &kp END    &trans  &trans
-&kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans         &trans    &trans    &trans     &trans  &trans
-                                &trans  &trans  &trans  &trans  &trans         &trans    &trans    &trans
-            >;
-        };
-
-        MEDIA_LAYER {
-            bindings = <
-&kp TAB           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_COMMAND  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
