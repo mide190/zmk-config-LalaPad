@@ -185,7 +185,7 @@
 
         DEFAULT_LAYER {
             display-name = "Default";
-            sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
 
             bindings = <
 &kp TAB           &kp Q  &kp W              &kp E                   &kp R                   &kp T                 &kp Y          &kp U        &kp I            &kp O            &kp P      &kp BACKSPACE
@@ -198,7 +198,7 @@
 
         SYSTEM_LAYER {
             display-name = "system_layer";
-            sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
 
             bindings = <
 &bt BT_CLR_ALL  &trans  &trans  &trans  &trans       &trans      &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
@@ -217,6 +217,8 @@
 &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans         &trans    &trans    &trans     &trans  &kp ESC
                                 &trans  &trans  &trans  &trans  &trans         &trans    &trans    &trans
             >;
+
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
         };
 
         SYMBOL_LAYER {
@@ -227,6 +229,8 @@
 &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans             &trans         &trans
                                 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans
             >;
+
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
         };
 
         NUMBER_LAYER {
@@ -237,11 +241,13 @@
 &kp LEFT_CONTROL  &kp LEFT_ALT  &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
                                 &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
             >;
+
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
         };
 
         TENKEY_LAYER {
             display-name = "secondary_layer";
-            sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
 
             bindings = <
 &kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &kp KP_PLUS   &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
@@ -261,6 +267,8 @@
 &trans  &trans  &trans  &trans  &kp C_SLOW_TRACKING  &trans  &trans  &trans  &trans     &trans     &trans  &trans
                 &trans  &trans  &trans               &trans  &trans  &trans  &trans     &trans
             >;
+
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
         };
 
         SCROLL_R_LAYER {
@@ -272,6 +280,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
         };
 
         MOUSE_L_LAYER {
@@ -283,6 +293,8 @@
 &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                    &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
         };
 
         SCROLL_L_LAYER {
@@ -294,6 +306,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
         };
     };
 };
