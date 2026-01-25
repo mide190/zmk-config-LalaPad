@@ -214,7 +214,7 @@
 &kp ESCAPE        &trans        &trans  &trans  &trans  &trans  &kp PG_UP      &trans    &kp UP    &trans     &trans         &kp DEL
 &kp LEFT_COMMAND  &trans        &trans  &trans  &trans  &trans  &trans         &kp LEFT  &kp DOWN  &kp RIGHT  &kp BACKSLASH  &kp GRAVE
 &kp LEFT_SHIFT    &trans        &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &trans    &kp HOME  &kp END    &kp SEMI       &kp SINGLE_QUOTE
-&kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans         &trans    &trans    &trans     &trans         &trans
+&kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans         &trans    &trans    &trans     &trans         &kp LG(LC(LS(NUMBER_4)))
                                 &trans  &trans  &trans  &trans  &trans         &trans    &trans    &trans
             >;
 
