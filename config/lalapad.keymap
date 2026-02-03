@@ -201,7 +201,7 @@
 &kp ESCAPE        &trans        &trans    &kp UP_ARROW    &trans     &kp PG_UP      &kp PG_UP      &trans    &kp UP    &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LEFT_COMMAND  &trans        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp PAGE_DOWN  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp SINGLE_QUOTE  &kp SINGLE_QUOTE
 &kp LEFT_SHIFT    &trans        &kp HOME  &kp END         &trans     &trans         &trans         &trans    &kp HOME  &kp END    &kp BACKSLASH     &kp GRAVE
-&kp LEFT_CONTROL  &kp LEFT_ALT  &trans    &trans          &trans     &trans         &trans         &trans    &trans    &trans     &trans            &trans
+&kp LEFT_CONTROL  &kp LEFT_ALT  &trans    &trans          &trans     &trans         &trans         &kp DEL   &trans    &trans     &trans            &trans
                                 &trans    &trans          &trans     &trans         &trans         &trans    &trans    &trans
             >;
 
