@@ -226,9 +226,9 @@
             key-positions = <15 14>;
         };
 
-        Alt_Tab {
-            bindings = <&kt LA(TAB)>;
-            key-positions = <27 28>;
+        for_Alt_Tab {
+            bindings = <&sk LEFT_ALT>;
+            key-positions = <1 2>;
         };
     };
 
