@@ -29,6 +29,12 @@
     tap-detection;
     prevent_movement_during_tap;
     circular-scroll;
+
+    /* エリアごとのボタン割り当てを定義 */
+    /* インデックス 0=左上, 1=右上, 2=左下, 3=右下 */
+    /* 0: 左クリック(MB1), 1: 右クリック(MB2) */
+    tap-buttons = <0 0 1 0>;
+
 };
 
 / {
