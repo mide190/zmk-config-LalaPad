@@ -186,19 +186,9 @@
     combos {
         compatible = "zmk,combos";
 
-        left_parenthesis {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <3 4>;
-        };
-
         right_parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
-        };
-
-        left_bracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <15 16>;
         };
 
         right_bracket {
@@ -206,29 +196,34 @@
             key-positions = <19 20>;
         };
 
-        left_brace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <27 28>;
-        };
-
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <31 32>;
         };
 
-        left_parenthesis_2 {
+        left_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <7 6>;
         };
 
-        left_bracket_2 {
+        left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <18 19>;
         };
 
-        left_brace_2 {
+        left_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <30 31>;
+        };
+
+        Browser_Shortcut_Next_Tab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <15 16>;
+        };
+
+        Browser_Shortcut_Prev_Tab {
+            bindings = <&kp LC(LS(TAB))>;
+            key-positions = <15 14>;
         };
     };
 
@@ -240,9 +235,9 @@
             sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
 
             bindings = <
-&mt2 LC(TAB) TAB  &kp Q         &kp W                     &mt2 N7 E               &mt2 N8 R               &mt2 N9 T             &mt2 SINGLE_QUOTE Y   &mt2 COLON U     &mt2 ASTERISK I  &mt2 PIPE O               &mt2 GRAVE P             &kp BACKSPACE
-&kp LEFT_COMMAND  &kp A         &kp S                     &mt2 NUMBER_4 D         &mt2 N5 F               &mt2 NUMBER_6 G       &mt2 DOUBLE_QUOTES H  &mt2 SEMI J      &kp K            &mt2 PLUS L               &mt2 KP_EQUAL MINUS      &mt2 RIGHT_COMMAND ENTER
-&kp LSHFT         &kp Z         &mt2 NUMBER_0 X           &mt2 NUMBER_1 C         &mt2 NUMBER_2 V         &mt2 NUMBER_3 B       &kp N                 &kp M            &kp COMMA        &mt2 BACKSLASH PERIOD     &kp SLASH                &kp RIGHT_SHIFT
+&mt2 LA(TAB) TAB  &mt2 ASTRK Q  &mt2 N7 W                 &mt2 N8 E               &mt2 N9 R               &mt2 PLUS T           &mt2 SINGLE_QUOTE Y   &mt2 COLON U     &mt2 ASTERISK I  &mt2 PIPE O               &mt2 GRAVE P             &kp BACKSPACE
+&kp LEFT_COMMAND  &kp SLASH     &mt2 NUMBER_4 S           &mt2 N5 D               &mt2 NUMBER_6 F         &mt2 MINUS G          &mt2 DOUBLE_QUOTES H  &mt2 SEMI J      &kp K            &mt2 PLUS L               &mt2 KP_EQUAL MINUS      &mt2 RIGHT_COMMAND ENTER
+&kp LSHFT         &mt2 N0 Z     &mt2 NUMBER_1 X           &mt2 NUMBER_2 C         &mt2 NUMBER_3 V         &mt2 KP_EQUAL N       &kp N                 &kp M            &kp COMMA        &mt2 BACKSLASH PERIOD     &kp SLASH                &kp RIGHT_SHIFT
 &kp LCTRL         &kp LEFT_ALT  &kp LG(LC(LS(NUMBER_3)))  &mo 1                   &lt 2 SPACE             &mo 5                 &mo 3                 &lt 2 BACKSPACE  &lt 1 ENTER      &kp RG(RC(RS(NUMBER_4)))  &mt2 INSERT PRINTSCREEN  &kp RIGHT_CONTROL
                                 &kp LG(LA(RIGHT))         &kp LG(LA(DOWN_ARROW))  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP_ARROW))  &allow_pageup         &allow_home      &allow_pagedown  &allow_end
             >;
