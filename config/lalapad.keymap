@@ -240,11 +240,11 @@
             sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
 
             bindings = <
-&kp TAB           &mt2 ASTRK Q  &mt2 N7 W                 &mt2 N8 E               &mt2 N9 R               &mt2 PLUS T           &mt2 SINGLE_QUOTE Y   &mt2 COLON U     &mt2 ASTRK I     &mt2 PIPE O               &mt2 GRAVE P             &kp BACKSPACE
-&kp LEFT_COMMAND  &mt2 SLASH A  &mt2 NUMBER_4 S           &mt2 N5 D               &mt2 NUMBER_6 F         &mt2 MINUS G          &mt2 DOUBLE_QUOTES H  &mt2 SEMI J      &kp K            &mt2 PLUS L               &mt2 KP_EQUAL MINUS      &mt2 RIGHT_COMMAND ENTER
-&kp LSHFT         &mt2 N0 Z     &mt2 NUMBER_1 X           &mt2 NUMBER_2 C         &mt2 NUMBER_3 V         &mt2 KP_EQUAL B       &kp N                 &kp M            &kp COMMA        &mt2 BACKSLASH PERIOD     &kp SLASH                &kp RIGHT_SHIFT
-&kp LCTRL         &kp LEFT_ALT  &kp LG(LC(LS(NUMBER_3)))  &mo 1                   &lt 2 SPACE             &mo 5                 &mo 3                 &lt 2 BACKSPACE  &lt 1 ENTER      &kp RG(RC(RS(NUMBER_4)))  &mt2 INSERT PRINTSCREEN  &kp RIGHT_CONTROL
-                                &kp LG(LA(RIGHT))         &kp LG(LA(DOWN_ARROW))  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP_ARROW))  &allow_pageup         &allow_home      &allow_pagedown  &allow_end
+&kp TAB           &mt2 ASTRK Q  &mt2 N7 W                 &mt2 N8 E               &mt2 N9 R               &mt2 PLUS T           &mt2 SINGLE_QUOTE Y   &mt2 COLON U     &mt2 LS(NUMBER_8) I  &mt2 LS(BACKSLASH) O      &mt2 GRAVE P             &kp BACKSPACE
+&kp LEFT_COMMAND  &mt2 SLASH A  &mt2 NUMBER_4 S           &mt2 N5 D               &mt2 NUMBER_6 F         &mt2 MINUS G          &mt2 DOUBLE_QUOTES H  &mt2 SEMI J      &kp K                &mt2 PLUS L               &mt2 KP_EQUAL MINUS      &mt2 RIGHT_COMMAND ENTER
+&kp LSHFT         &mt2 N0 Z     &mt2 NUMBER_1 X           &mt2 NUMBER_2 C         &mt2 NUMBER_3 V         &mt2 KP_EQUAL B       &kp N                 &kp M            &kp COMMA            &mt2 BACKSLASH PERIOD     &kp SLASH                &kp RIGHT_SHIFT
+&kp LCTRL         &kp LEFT_ALT  &kp LG(LC(LS(NUMBER_3)))  &mo 1                   &lt 2 SPACE             &mo 5                 &mo 3                 &lt 2 BACKSPACE  &lt 1 ENTER          &kp RG(RC(RS(NUMBER_4)))  &mt2 INSERT PRINTSCREEN  &kp RIGHT_CONTROL
+                                &kp LG(LA(RIGHT))         &kp LG(LA(DOWN_ARROW))  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP_ARROW))  &allow_pageup         &allow_home      &allow_pagedown      &allow_end
             >;
         };
 
