@@ -219,17 +219,22 @@
 
         Browser_Shortcut_Next_Tab {
             bindings = <&kp LC(TAB)>;
-            key-positions = <15 16>;
+            key-positions = <14 15>;
         };
 
         Browser_Shortcut_Prev_Tab {
             bindings = <&kp LC(LS(TAB))>;
-            key-positions = <15 14>;
+            key-positions = <26 27>;
         };
 
-        for_Alt_Tab {
-            bindings = <&sk LEFT_ALT>;
-            key-positions = <1 2>;
+        Zoom {
+            bindings = <&kp LG(KP_PLUS)>;
+            key-positions = <16 15>;
+        };
+
+        ZoomOut {
+            bindings = <&kp LG(KP_MINUS)>;
+            key-positions = <27 28>;
         };
     };
 
