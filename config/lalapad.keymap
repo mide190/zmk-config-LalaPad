@@ -232,6 +232,46 @@
             bindings = <&kp LG(KP_MINUS)>;
             key-positions = <14 15>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <9 10>;
+        };
+
+        enter_and_R_cmd {
+            bindings = <&mt2 RIGHT_COMMAND ENTER>;
+            key-positions = <21 22>;
+        };
+
+        R_shift {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <33 34>;
+        };
+
+        tab_and_esc {
+            bindings = <&mt2 ESCAPE TAB>;
+            key-positions = <1 2>;
+        };
+
+        L_shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <25 26>;
+        };
+
+        L_cmd {
+            bindings = <&kp LEFT_COMMAND>;
+            key-positions = <13 14>;
+        };
+
+        L_control {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <37 38>;
+        };
+
+        R_control {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <45 46>;
+        };
     };
 
     keymap {
@@ -242,11 +282,11 @@
             sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
 
             bindings = <
-&kp TAB           &mt2 NUMBER_1 Q  &mt2 NUMBER_2 W           &mt2 NUMBER_3 E         &mt2 NUMBER_4 R         &mt2 N5 T             &mt2 SINGLE_QUOTE Y   &mt2 COLON U     &mt2 ASTERISK I  &mt2 PIPE O              &mt2 GRAVE P         &kp BACKSPACE
-&kp LEFT_COMMAND  &mt2 NUMBER_6 A  &mt2 N7 S                 &mt2 N8 D               &mt2 N9 F               &mt2 N0 G             &mt2 DOUBLE_QUOTES H  &mt2 SEMI J      &kp K            &mt2 PLUS L              &mt2 KP_EQUAL MINUS  &mt2 RIGHT_COMMAND ENTER
-&kp LSHFT         &kp Z            &kp X                     &kp C                   &kp V                   &kp B                 &kp N                 &kp M            &kp COMMA        &mt2 BACKSLASH PERIOD    &kp SLASH            &kp RIGHT_SHIFT
-&kp LCTRL         &kp LEFT_ALT     &kp LC(LS(LG(NUMBER_4)))  &mo 1                   &lt 2 SPACE             &mo 5                 &mo 3                 &lt 2 BACKSPACE  &lt 1 ENTER      &mt2 PRINTSCREEN INSERT  &kp RIGHT_ALT        &kp RIGHT_CONTROL
-                                   &kp LG(LA(RIGHT))         &kp LG(LA(DOWN_ARROW))  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP_ARROW))  &allow_pageup         &allow_home      &allow_pagedown  &allow_end
+&mt2 ESC TAB      &kp Q         &kp W                     &kp E                   &kp R                   &kp T                 &mt2 SINGLE_QUOTE Y   &mt2 COLON U     &mt2 ASTERISK I  &mt2 PIPE O            &mt2 GRAVE P         &kp BACKSPACE
+&kp LEFT_COMMAND  &kp A         &kp S                     &kp D                   &kp F                   &kp G                 &mt2 DOUBLE_QUOTES H  &mt2 TILDE J     &kp K            &mt2 PLUS L            &mt2 KP_EQUAL MINUS  &mt2 RIGHT_COMMAND ENTER
+&kp LSHFT         &kp Z         &kp X                     &kp C                   &kp V                   &kp B                 &kp N                 &mt2 SEMI M      &kp COMMA        &mt2 BACKSLASH PERIOD  &kp SLASH            &kp RIGHT_SHIFT
+&kp LCTRL         &kp LEFT_ALT  &kp LC(LS(LG(NUMBER_4)))  &mo 1                   &lt 2 SPACE             &mo 5                 &mo 3                 &lt 2 BACKSPACE  &lt 1 ENTER      &kp F20                &kp F19              &kp RIGHT_CONTROL
+                                &kp LG(LA(RIGHT))         &kp LG(LA(DOWN_ARROW))  &kp LG(LA(LEFT_ARROW))  &kp LG(LA(UP_ARROW))  &allow_pageup         &allow_home      &allow_pagedown  &allow_end
             >;
         };
 
