@@ -330,11 +330,11 @@
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans       &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans       &trans  &trans  &mkp MB4   &mkp MB5   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp C_SLOW2  &trans  &trans  &trans     &trans     &trans  &trans  &trans
-                &trans  &trans  &trans       &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &mkp MB4   &mkp MB5   &trans  &trans
+&trans  &trans  &trans  &trans  &kp C_SLOW2  &trans  &trans  &trans  &trans     &trans     &trans  &trans
+                &trans  &trans  &trans       &trans  &trans  &trans  &trans     &trans
             >;
 
             sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
